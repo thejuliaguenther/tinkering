@@ -1,17 +1,19 @@
-import os
+# import os
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
+from dotenv import load_dotenv
 import argparse
+
+load_dotenv()
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--task", default="Return a list of numbers")
 parser.add_argument("--language", default="python")
 args = parser.parse_args()
 
-api_key = os.getenv('OPENAI_KEY')
 
-llm = OpenAI(openai_api_key=api_key)
+llm = OpenAI()
 
 code_prompt = PromptTemplate(
     input_variables=["task", "language"],
