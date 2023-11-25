@@ -1,4 +1,4 @@
-# This file explores using LangChain with a Chat model
+# This file explores using LangChain with a Chat-based model
 
 from langchain.chat_models import ChatOpenAI
 from langchain import LLMChain
