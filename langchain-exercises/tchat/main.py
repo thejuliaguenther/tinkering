@@ -1,3 +1,5 @@
+# This file explores using LangChain with a Chat model
+
 from langchain.chat_models import ChatOpenAI
 from langchain import LLMChain
 from langchain.prompts import MessagesPlaceholder, HumanMessagePromptTemplate, ChatPromptTemplate
