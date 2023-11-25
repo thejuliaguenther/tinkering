@@ -1,7 +1,7 @@
 # This file explores using LangChain with a Chat-based model
 
 from langchain.chat_models import ChatOpenAI
-from langchain import LLMChain
+from langchain.chains import LLMChain
 from langchain.prompts import MessagesPlaceholder, HumanMessagePromptTemplate, ChatPromptTemplate
 from langchain.memory import ConversationBufferMemory, FileChatMessageHistory
 from dotenv import load_dotenv
