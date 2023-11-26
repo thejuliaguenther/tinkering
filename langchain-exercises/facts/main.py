@@ -8,8 +8,6 @@ load_dotenv()
 
 embeddings = OpenAIEmbeddings()
 
-emb = embeddings.embed_query("hi there")
-
 text_splitter = CharacterTextSplitter(
     separator="\n",
     chunk_size=200,
@@ -34,4 +32,4 @@ results = db.similarity_search(
 for result in results:
     print("\n")
     print(result.page_content)
-    
+
